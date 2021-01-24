@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Material Design Bootstrap</title>
+  <title>MyGrade</title>
+  
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -44,7 +45,11 @@
                   background: #1C2331!important;
               }
           }
+
+
+   
   </style>
+  <link href="css/mouse.css" rel="stylesheet">
 </head>
 
 <body>
@@ -80,6 +85,9 @@
           <li class="nav-item">
             <a class="nav-link" href="https://hisnet.handong.edu/" target="_blank">Hisnet</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="inst.html" target="_blank">Instructor</a>
+          </li>
       
         </ul>
 
@@ -87,9 +95,16 @@
         <ul class="navbar-nav nav-flex-icons">
         
           <li class="nav-item">
-            <a href="https://github.com/returnb2b/mygrade" class="nav-link border border-light rounded"
+            <a href="https://github.com/idebtor/nowic" class="nav-link border border-light rounded"
               target="_blank">
-              <i class="fab fa-github mr-2"></i>GitHub
+              <i class="fab fa-github mr-2"></i>Nowic
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a href="https://github.com/idebtor/joyai" class="nav-link border border-light rounded"
+              target="_blank">
+              <i class="fab fa-github mr-2"></i>JoyAI
             </a>
           </li>
         </ul>
@@ -101,7 +116,7 @@
   <!-- Navbar -->
 
   <!-- Full Page Intro -->
-  <div class="view full-page-intro" style="background-image: url('/img/mygrade_background.jpg'); background-repeat: no-repeat; background-size: cover;">
+  <div class="view full-page-intro" style="background-image: url('/img/mygrade_background.png'); background-repeat: no-repeat; background-size: cover; background-position: 30%">
 
     <!-- Mask & flexbox options-->
     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
@@ -115,41 +130,53 @@
           <!--Grid column-->
           <div class="col-md-6 mb-4 white-text text-center text-md-left">
 
-            <h1 class="display-4 font-weight-bold">MyGrade</h1>
+        
+
+          </div>
+          <!--Grid column-->
+          
+          <!--Grid column-->
+          <div class="col-md-6 mb-4 text-center text-md-left">
+          <br>
+          <br>
+          <br>
+            <h1 class="display-4 font-weight-bold white-text">MyGrade</h1>
 
             <hr class="hr-light">
-
-            <p>
+            
+            <p class="white-text">
+            
               <strong>MyGrade allows you to check your grade instantly.
                       <br>Select your course, enter your nickname, your student number, and press the CHECK button.</strong>
             </p>
 
-            <p class="mb-4 d-none d-md-block">
-              <strong>Thank you for your hard work during this semester.<br> God is good, All the time!</strong>
+           
+            <hr class="white hr">
+            <p class="white-text">
+              <strong>MyGrade는 여러분의 성적을 보여주는 웹사이트입니다.
+                      <br>분반, 닉네임, 학번을 입력하고 CHECK버튼을 눌러주세요.</strong>
             </p>
 
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-md-6 col-xl-5 mb-4">
-
+            <p class="white-text">
+              <strong>God is good, All the time!</strong>
+            </p>
             <!--Card-->
             <div class="card">
-
+        
               <!--Card content-->
-              <div class="card-body">
+              <div id="whoru1" class="card-body" style="background-color:#ffffff">
 
                 <!-- Form -->
-                <form name="" action="viewer.html" method="get" target="param">
+                <form id="whoru2" name="" action="viewer.html" method="get" target="param" style="background-color:#ffffff">
                   <!-- Heading -->
                   <h3 class="dark-grey-text text-center">
-                    <strong>Write your info</strong>
+                    <strong></strong>
                   </h3>
                   <hr>
-
+                  
                   <div class="md-form">
-                    <b style="text-align: center">Select your course.</b><br>
+                  
+                    <font style="text-align: left" color="black"><b>Select your course.</b></font><br>
                     <select class="form-control" id="course" name="course" style="font-size: 15px; text-align: center; align: center">
                     
                     <option value="AI">모두를 위한 인공지능의 활용 (AI for All)</option>
@@ -160,12 +187,12 @@
                   <div class="md-form">
                     <i class="fas fa-user prefix grey-text"></i>
                     <input type="text" id="nickName" class="form-control">
-                    <label for="nickName">Your Nickname</label>
+                    <label id="whoru3" for="nickName">Your Nickname</label>
                   </div>
                   <div class="md-form">
                     <i class="fas fa-pencil-alt prefix grey-text"></i>
                     <input type="password" id="studentNumber" class="form-control">
-                    <label for="studentNumber">Your Student Number</label>
+                    <label id="whoru4" for="studentNumber">Your Student Number</label>
                   </div>
 
 
@@ -177,6 +204,7 @@
 
                 </form>
                 <!-- Form -->
+                
 
               </div>
 
@@ -188,7 +216,9 @@
 
         </div>
         <!--Grid row-->
-
+        <div class="mouse"><div class="wheel"></div></div>
+        <div><span class="unu"></span> <span class="doi"></span> <span class="trei"></span> </div>
+        <p class="white-text text-center font-weight-bold">scroll me</p>
       </div>
       <!-- Content -->
 
@@ -312,6 +342,7 @@
   <script src="js/course.js"></script>
   <script src="js/load_csv.js"></script>
   <script src="js/process.js"></script>
+  
 </body>
 
 </html>

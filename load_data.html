@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>MyGrade</title>
+ 
+ <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+<body>
+<hr>
+<h2 class="text-center">csv파일을 업로드 해주세요.</h2>
+<p class="text-center">파일 형식은 다음과 같습니다.</p>
+<table border="1" align="center">
+    <tr>
+        <th>studentnumber</th>
+        <th>nickname</th>
+        <th>quiz01</th>
+        <th>quiz02</th>
+        <th>...</th>
+
+    </tr>
+    <tr>
+        <th>22100123</th>
+        <th>홍길동</th>
+        <th>0.4</th>
+        <th>0.5</th>
+        <th>...</th>
+    </tr>
+    <tr>
+        <th>21800911</th>
+        <th>김아무개</th>
+        <th>0.5</th>
+        <th>0.3</th>
+        <th>...</th>
+    </tr>
+    <tr>
+        <th>...</th>
+        <th>...</th>
+        <th>...</th>
+        <th>...</th>
+        <th>...</th>
+    </tr>
+</table>
+<hr>
+<form class="text-center" action="data" method="post" enctype="multipart/form-data">
+    <input type="file" name="data">
+    <input type="submit" value="업로드" onClick="check()">
+</form>
+
+  <script type="text/javascript">
+    function check() {
+        alert("업로드 되었습니다.");
+    }
+  </script>
+</body>
+</html>
