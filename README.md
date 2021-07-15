@@ -1,6 +1,6 @@
 # mygrade
 ## This is a website that views user's grades instantly.
-🚀 Handong Global Univ. 
+🚀 Handong Global Univ.   
 🖥 School of Electronic Engineering and Computer Science.  
 
 Sample Run Image Below:  
